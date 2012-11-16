@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-#define TRACING_ON 
+//#define TRACING_ON 
 
 Game_Engine::Game_Engine(void)
 {
@@ -108,4 +108,31 @@ void Game_Engine::sleep(unsigned int mseconds)
 	printf("sleep() done, clock = %d\n", clock());
 #endif
 
+}
+
+void Game_Engine::clockTest()
+{
+	clock_t start, end;
+    double duration;
+
+    start = clock();
+
+	printf("start = %d\n", start);
+
+    // ... do something that takes a while ...
+    for( int i=0; i < 1000; i++ )
+    {
+		printf("i = %d\n", i);
+        //cout << i << endl;
+    }
+
+    end = clock();
+
+	printf("end = %d\n", end);
+
+    // Compute the duration 
+    duration = ((double)( end - start )) / CLOCKS_PER_SEC;
+
+    //cout << duration << " seconds" << endl;
+	printf("duration = %d seconds\n", duration);
 }

@@ -18,6 +18,7 @@ public:
 	bool gameRenderFrame(int nCount);
 	bool gameUpdateFrame();
 	void sleep(unsigned int mseconds); //simulates delay in miliseconds 
+	void clockTest();
 
 };
 #endif

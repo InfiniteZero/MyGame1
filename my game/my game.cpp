@@ -22,31 +22,9 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	testGameEngine.gameInit();
 	
-							//xxx put this in new function
-	clock_t start, end;
-    double duration;
-
-    start = clock();
-
-	printf("start = %d\n", start);
-
-    // ... do something that takes a while ...
-    for( int i=0; i < 1000; i++ )
-    {
-		printf("i = %d\n", i);
-        //cout << i << endl;
-    }
-
-    end = clock();
-
-	printf("end = %d\n", end);
-
-    // Compute the duration 
-    duration = ((double)( end - start )) / CLOCKS_PER_SEC;
-
-    //cout << duration << " seconds" << endl;
-	printf("duration = %d seconds\n", duration);
-						    //xxx put this in new function
+							
+	testGameEngine.clockTest(); //Injecting testClock() function
+						    
 
  /*          main game loop*/
 
