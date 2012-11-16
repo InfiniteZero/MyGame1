@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-//#define TRACING_ON 
+#define TRACING_ON 
 
 Game_Engine::Game_Engine(void)
 {
