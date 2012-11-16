@@ -22,7 +22,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	testGameEngine.gameInit();
 	
-	
+							//xxx put this in new function
 	clock_t start, end;
     double duration;
 
@@ -46,7 +46,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
     //cout << duration << " seconds" << endl;
 	printf("duration = %d seconds\n", duration);
-
+						    //xxx put this in new function
 
  /*          main game loop*/
 
