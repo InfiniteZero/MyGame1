@@ -24,7 +24,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	
 							
 	testGameEngine.clockTest(); //Injecting testClock() function
-						    
+	
+	printf("Main game loop\n");
 
  /*          main game loop*/
 
